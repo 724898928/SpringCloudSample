@@ -23,12 +23,14 @@
         <spring.starter.actuator>2.3.5.RELEASE</spring.starter.actuator>
         <spring.cloud.commons>2.2.5.RELEASE</spring.cloud.commons>
         <spring-boot-autoconfigure>2.3.2.RELEASE</spring-boot-autoconfigure>
+        <spring-cloud-starter-nacos-config>2.2.3.RELEASE</spring-cloud-starter-nacos-config>
     </properties>
     <modules>
         <module>spring-cloud-nacos-config-example</module>
         <module>spring-cloud-nacos-discovery-example</module>
         <module>api-commons</module>
         <module>spring-cloud-nacos-provider-payment-9001</module>
+        <module>spring-cloud-nacos-consumer-payment-9002</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -83,6 +85,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-autoconfigure</artifactId>
                 <version>${spring-boot-autoconfigure}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+                <version>${spring-cloud-starter-nacos-config}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

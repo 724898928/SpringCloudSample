@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-commons" />
+        <module name="spring-cloud-nacos-config-example" />
+        <module name="spring-cloud-nacos-consumer-payment-9002" />
+        <module name="spring-cloud-nacos-discovery-example" />
+        <module name="spring-cloud-nacos-provider-payment-9001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-commons" target="1.5" />
+      <module name="spring-cloud-nacos-config-example" target="1.5" />
+      <module name="spring-cloud-nacos-consumer-payment-9002" target="1.5" />
+      <module name="spring-cloud-nacos-discovery-example" target="1.5" />
+      <module name="spring-cloud-nacos-provider-payment-9001" target="1.5" />
+      <module name="SpringCloudExample" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
